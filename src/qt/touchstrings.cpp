@@ -209,10 +209,10 @@ QT_TRANSLATE_NOOP("touch-core", ""
 QT_TRANSLATE_NOOP("touch-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("touch-core", "(51121 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("touch-core", "(12771 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("touch-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("touch-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("touch-core", "(must be 51121 for mainnet)"),
+QT_TRANSLATE_NOOP("touch-core", "(must be 12771 for mainnet)"),
 QT_TRANSLATE_NOOP("touch-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("touch-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("touch-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

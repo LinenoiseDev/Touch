@@ -1623,18 +1623,23 @@ int64_t GetBlockValue(int nHeight)
 
     int64_t nSubsidy = 0;
 
-    if (nHeight <= 9) {
-        nSubsidy = 0 * COIN;
+
+    if (nHeight == 0) {
+        nSubsidy = 125000000 * COIN;
+    } else if (nHeight > 0 && nHeight <= 500) {
+        nSubsidy = 1 * COIN;
+    } else if (nHeight > 500 && nHeight <= 50000) {
+        nSubsidy = 18 * COIN;
+    } else if (nHeight > 50000 && nHeight <= 100000) {
+        nSubsidy = 19 * COIN;
+    } else if (nHeight > 100000 && nHeight <= 150000) {
+        nSubsidy = 20 * COIN;
+    } else {
+        nSubsidy = 21 * COIN;
     }
-    else if (nHeight > 9 && nHeight <= 49 ) {
-        nSubsidy = 225000 * COIN;
-    } else if (nHeight > 49 && nHeight <= 499 ) {
-        nSubsidy = 0 * COIN;
-    } else if (nHeight > 499 && nHeight <= 4999 ) {  // Last POW Block
-        nSubsidy = 30 * COIN;
-    } else if (nHeight > 4999) {
-        nSubsidy = 15 * COIN;
-    }
+
+
+
 return nSubsidy;
 }
 
