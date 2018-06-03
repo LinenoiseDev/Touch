@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=touch
+Comment=touch P2P Cryptocurrency
+Exec=touch-qt %u
+Terminal=false
+Type=Application
+Icon=touch128
+MimeType=x-scheme-handler/touch;
+Categories=Office;Finance;
+Name[it]=touch-qt.desktop
