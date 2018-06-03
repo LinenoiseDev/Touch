@@ -3,7 +3,7 @@ TOUCH Coin
 
 Touch is a Masternode / Staking cryptocurrency with many features
 
-- Originally Forked from Phore, which had been forked from Pivx, which was a
+- Originally Forked from KLKS, which had been forked from Pivx, which was a
   DASH fork
 - Anonymized transactions using zerocoin technology
 - 100% Proof of Stake 3.0 Consensus protocol, allowing very low transaction fees and energy expenditure, and staking rewards to all participants in the network
@@ -27,8 +27,8 @@ These TOUCH will become the exclusive coin for services on TouchMyCoin
 
 <table>
 <th>Block Height</th><th>Reward</th><th>Masternodes</th><th>Stakers</th>
-<tr><td><= 1000</td><td>1 TOUCH</td><td>0 TOUCH</td><td>0 TOUCH</td></tr>
-<tr><td>1000 - 50000</td><td>18 TOUCH</td><td>9.72 TOUCH</td><td>6.48 TOUCH</td></tr>
+<tr><td><= 500</td><td>1 TOUCH</td><td>0 TOUCH</td><td>0 TOUCH</td></tr>
+<tr><td>500 - 50000</td><td>18 TOUCH</td><td>9.72 TOUCH</td><td>6.48 TOUCH</td></tr>
 <tr><td>50001 - 100000</td><td>19 TOUCH</td><td>10.26 TOUCH</td><td>6.84 TOUCH</td></tr>
 <tr><td>100001 - 150000</td><td>20 TOUCH</td><td>10.8 TOUCH</td><td>7.2 TOUCH</td></tr>
 <tr><td>150001 + </td><td>21 TOUCH</td><td>11.34 TOUCH</td><td>7.56 TOUCH</td></tr>
