@@ -1,0 +1,28 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/touch_bg.qm</file>
+        <file alias="ca">locale/touch_ca.qm</file>
+        <file alias="cs">locale/touch_cs.qm</file>
+        <file alias="da">locale/touch_da.qm</file>
+        <file alias="de">locale/touch_de.qm</file>
+        <file alias="en">locale/touch_en.qm</file>
+        <file alias="en_US">locale/touch_en_US.qm</file>
+        <file alias="es">locale/touch_es.qm</file>
+        <file alias="fi">locale/touch_fi.qm</file>
+        <file alias="fr_FR">locale/touch_fr_FR.qm</file>
+        <file alias="it">locale/touch_it.qm</file>
+        <file alias="ja">locale/touch_ja.qm</file>
+        <file alias="ko_KR">locale/touch_ko_KR.qm</file>
+        <file alias="nl">locale/touch_nl.qm</file>
+        <file alias="pl">locale/touch_pl.qm</file>
+        <file alias="pt">locale/touch_pt.qm</file>
+        <file alias="pt_BR">locale/touch_pt_BR.qm</file>
+        <file alias="ro_RO">locale/touch_ro_RO.qm</file>
+        <file alias="ru">locale/touch_ru.qm</file>
+        <file alias="sk">locale/touch_sk.qm</file>
+        <file alias="sv">locale/touch_sv.qm</file>
+        <file alias="uk">locale/touch_uk.qm</file>
+        <file alias="zh_CN">locale/touch_zh_CN.qm</file>
+        <file alias="zh_TW">locale/touch_zh_TW.qm</file>
+    </qresource>
+</RCC>
