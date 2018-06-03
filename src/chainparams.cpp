@@ -386,7 +386,7 @@ public:
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60 * 60; // Touch 1 hours
-        nTargetSpacing = 1 * 120;  // Touch Block Time: 2 Min
+        nTargetSpacing = 1 * 60;  // Touch Block Time: 2 Min
         nLastPOWBlock = 500;   //Last Pow Block
         nMaturity = 10;
         nMasternodeCountDrift = 20;
