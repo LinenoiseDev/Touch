@@ -406,11 +406,11 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1527992510;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 2597099;
+        genesis.nNonce = 3685073;
 
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000005e38c7dacddc3618832215dcadaa362b3863fb17c5a9ce9174e76a034dc"));
+        assert(hashGenesisBlock == uint256("0x0000049a1beac4a3c1214dbe9ebd5310ebcea44ec6ada6d4c7118282fd6fa646"));
       
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
@@ -478,7 +478,7 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
        genesis.nTime = 1527992510;
-        genesis.nNonce = 5313751;
+        genesis.nNonce = 3685073;
 
         hashGenesisBlock = genesis.GetHash();
         //assert(hashGenesisBlock == uint256("0x00000808c9c6f252adbb77cb7932c842e92db57f753e373c6f2f44dfb1a65748"));
@@ -544,7 +544,7 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1527992510;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 5313751;
+        genesis.nNonce = 3685073;
 
 
         hashGenesisBlock = genesis.GetHash();
