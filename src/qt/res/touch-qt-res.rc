@@ -20,13 +20,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "touch"
-            VALUE "FileDescription",    "Kalkulus Client (OSS GUI client for touch)"
+            VALUE "FileDescription",    "Touch Client (OSS GUI client for touch)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "touch-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "touch-qt.exe"
-            VALUE "ProductName",        "Kalkulus Client"
+            VALUE "ProductName",        "Touch Client"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

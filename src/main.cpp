@@ -1647,11 +1647,11 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
         ret = blockValue / 5; // Under that block_height MN get 20% of block reward
     } else if (nHeight > Params().LAST_POW_BLOCK()) {
         int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
-        int64_t mNodeCoins = mnodeman.size() * 20000 * COIN; // Collateral needed to run a single Touch Masternode
+        int64_t mNodeCoins = mnodeman.size() * 50000 * COIN; // Collateral needed to run a single Touch Masternode
 
         //if a mn count is inserted into the function we are looking for a specific result for a masternode count
         if(nMasternodeCount)
-            mNodeCoins = nMasternodeCount * 20000 * COIN;
+            mNodeCoins = nMasternodeCount * 50000 * COIN;
 
         // Use this log to compare the masternode count for different clients
         LogPrintf("Adjusting seesaw at height %d with %d masternodes (without drift: %d) at %ld\n", nHeight, nMasternodeCount, nMasternodeCount - Params().MasternodeCountDrift(), GetTime());
