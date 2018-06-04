@@ -333,7 +333,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
       boost::assign::map_list_of
-      (0, uint256("0x0000049a1beac4a3c1214dbe9ebd5310ebcea44ec6ada6d4c7118282fd6fa646"));
+      (0, uint256("0x00000aaad983599037e5b970e4f2a6525bbd28045ad63b4a843d5dc7b40fc9eb"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -344,7 +344,7 @@ static const Checkpoints::CCheckpointData data = {
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x0000049a1beac4a3c1214dbe9ebd5310ebcea44ec6ada6d4c7118282fd6fa646"));
+    boost::assign::map_list_of(0, uint256("0x00000aaad983599037e5b970e4f2a6525bbd28045ad63b4a843d5dc7b40fc9eb"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1527992510,
@@ -352,7 +352,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     250};
     
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x0000049a1beac4a3c1214dbe9ebd5310ebcea44ec6ada6d4c7118282fd6fa646"));
+    boost::assign::map_list_of(0, uint256("0x00000aaad983599037e5b970e4f2a6525bbd28045ad63b4a843d5dc7b40fc9eb"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     1527992510,
@@ -393,7 +393,7 @@ public:
         nModifierUpdateBlock = 615800;
         nMaxMoneyOut = 1000000000 * COIN;
 
-        const char* pszTimestamp = "13 April 2018 Tim Draper predicts bitcoin will reach 250000 by 2022";
+        const char* pszTimestamp = "April 13 2018 Tim Draper predicts Bitcoin will reach 250000 by 2022";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -406,11 +406,11 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1527992510;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 3685073;
+        genesis.nNonce = 3945533;
 
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000049a1beac4a3c1214dbe9ebd5310ebcea44ec6ada6d4c7118282fd6fa646"));
+        assert(hashGenesisBlock == uint256("0x00000aaad983599037e5b970e4f2a6525bbd28045ad63b4a843d5dc7b40fc9eb"));
       
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
@@ -478,7 +478,7 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
        genesis.nTime = 1527992510;
-        genesis.nNonce = 3685073;
+        genesis.nNonce = 3945533;
 
         hashGenesisBlock = genesis.GetHash();
         //assert(hashGenesisBlock == uint256("0x00000808c9c6f252adbb77cb7932c842e92db57f753e373c6f2f44dfb1a65748"));
@@ -544,7 +544,7 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1527992510;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 3685073;
+        genesis.nNonce = 3945533;
 
 
         hashGenesisBlock = genesis.GetHash();
