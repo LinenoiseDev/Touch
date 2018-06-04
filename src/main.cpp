@@ -1627,14 +1627,14 @@ int64_t GetBlockValue(int nHeight)
     if (nHeight < 5) {
         nSubsidy = 1 * COIN;
     } else if (nHeight == 5) {
-        nSubsidy = 125000000 * COIN;
-    } else if (nHeight > 5 && nHeight <= 500) {
         nSubsidy = 1 * COIN;
+    } else if (nHeight > 5 && nHeight <= 500) {
+        nSubsidy = 2 * COIN;
     } else if (nHeight > 500 && nHeight <= 50000) {
         nSubsidy = 18 * COIN;
     } else if (nHeight > 50000 && nHeight <= 100000) {
         nSubsidy = 19 * COIN;
-    } else if (nHeight > 100000 && nHeight <= 150000) {
+    } else if (nHeight > 100000 && nHeight <= 500000) {
         nSubsidy = 20 * COIN;
     } else {
         nSubsidy = 21 * COIN;
@@ -1650,7 +1650,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 {
     int64_t ret = 0;
 
-    if (nHeight <= 4999) {
+    if (nHeight <= 500) {
         ret = blockValue / 5; // Under that block_height MN get 20% of block reward
     } else if (nHeight > Params().LAST_POW_BLOCK()) {
         int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;

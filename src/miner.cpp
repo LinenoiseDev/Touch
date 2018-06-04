@@ -114,10 +114,10 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     txNew.vout[0].scriptPubKey = scriptPubKeyIn;
     CBlockIndex* prev = chainActive.Tip();
     if(prev->nHeight <= 9) { txNew.vout[0].nValue = 0 * COIN;} //   Empty genesis block
-    if (prev->nHeight > 9 && prev->nHeight <= 49) { txNew.vout[0].nValue = 225000 * COIN;} // 9 million coins premine for swap KLK > TOUCH
-    if (prev->nHeight > 49 && prev->nHeight <= 499) { txNew.vout[0].nValue = 0 * COIN;} // Empty block to asset blockchain
-    if (prev->nHeight > 499 && prev->nHeight <= 4999) { txNew.vout[0].nValue = 30 * COIN;}  // Reward for the POW phase
-    if (prev->nHeight > 4999) { txNew.vout[0].nValue = 15 * COIN;}   //  Block reward until max coin supply of 20 million coins
+    if (prev->nHeight > 9 && prev->nHeight <= 14) { txNew.vout[0].nValue = 25000000;} // 9 million coins premine for swap KLK > TOUCH
+    if (prev->nHeight > 14 && prev->nHeight <= 499) { txNew.vout[0].nValue = 1 * COIN;} // Empty block to asset blockchain
+    if (prev->nHeight > 499 && prev->nHeight <= 4999) { txNew.vout[0].nValue = 1 * COIN;}  // Reward for the POW phase
+    if (prev->nHeight > 4999) { txNew.vout[0].nValue = 1 * COIN;}   //  Block reward until max coin supply of 20 million coins
     pblock->vtx.push_back(txNew);
     pblocktemplate->vTxFees.push_back(-1);   // updated at end
     pblocktemplate->vTxSigOps.push_back(-1); // updated at end
