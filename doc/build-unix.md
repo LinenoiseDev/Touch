@@ -26,6 +26,8 @@ make install # optional
 
 This will build touch-qt as well if the dependencies are met.
 
+* For headless server builds you may want ./configure enable_test=no with_gui=no
+
 Dependencies
 ---------------------
 
